@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Source Serif 4", serif;
+  font-size: 1.41rem;
+  color: #a54328;
+  line-height: 1.8rem;
+}
+
+main {
+  max-width: 32rem;
+  margin-inline: auto; /* centraliza*/
+  padding: 5.4rem 3.7rem;
+  box-sizing: content-box; /* ajusta apenas o tamanho da caixa e não dos elementos dentro */
+}
+
+.describe {
+  display: flex;
+  flex-direction: column;
+  gap: 4.67rem;
+  margin-bottom: 3.4rem;
+}
+
+h1 {
+  font-size: 2.83rem;
+  line-height: 3.6rem;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h2 {
+  font-size: 2.83rem;
+  line-height: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 3.7rem;
+}
+
+ul,
+ol {
+  padding-left: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+button {
+  font-family: "Source Serif 4", serif;
+  font-size: 1rem;
+  background-color: #a54328;
+  color: #fff;
+  border: 0;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.6rem;
+  margin-top: 1.8rem;
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(./img/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface.jpg);
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  main {
+    display: flex;
+    max-width: 115rem;
+    gap: 19rem;
+    margin-top: 9.5rem;
+  }
+  img {
+    max-width: 41rem;
+  }
+  .describe {
+    max-width: 43.5rem;
+  }
+  .ingredients {
+    max-width: 52.5rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 4rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+@media (width: 768px) {
+  body {
+    background-image: url(./img/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface.jpg);
+  }
+}
